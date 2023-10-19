@@ -4,3 +4,5 @@ Pipfile
 Pipfile.lock
 pymysql/__pycache__/config.cpython-311.pyc
 sqlalchemy_examples/__pycache__/config.cpython-311.pyc
+pymysql/__pycache__
+sqlalchemy_examples/__pycache__
