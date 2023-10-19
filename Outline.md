@@ -2,7 +2,7 @@ Title: SQL for Python Developers
 
 1. Introduction
 
-    Brief intro to the topic/
+    Brief intro to the topic.
     My experience with Python and MySQL.
 
 2. Setting the Stage

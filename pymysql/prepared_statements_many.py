@@ -1,10 +1,8 @@
 '''This file demonstrates how to use executemany() to insert multiple rows into a MySQL database using pymysql.
 It inserts multiple rows into the users_test_table table using a prepared statement.
 '''
-
 import pymysql
 from config import DB_CONFIG
-
 
 
 #specify the values to insert into the query:
@@ -39,3 +37,4 @@ cursor.close()
 
 #close the connection:
 conn.close()
+

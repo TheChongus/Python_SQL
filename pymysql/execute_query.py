@@ -13,8 +13,9 @@ conn = pymysql.connect(host=DB_CONFIG['host'],
 
 #STANDARD QUERY, RESULTS COME BACK AS A TUPLE OF TUPLES:
 cursor = conn.cursor() # <--create a cursor object to execute queries
-cursor.execute('SELECT * FROM users_test_table') # <--execute a query
+cursor.execute('SELECT * FROM users_test_table;') # <--execute a query
 result = cursor.fetchall() # <--fetch the results of the query
+
 
 cursor.close() # <--close the cursor
 print("-------------------")
@@ -26,11 +27,14 @@ print(result) # <--print the results
 cursor = conn.cursor(pymysql.cursors.DictCursor) # <--create a cursor object to execute queries
 cursor.execute('SELECT * FROM users_test_table') # <--execute a query
 result = cursor.fetchall() # <--fetch the results of the query
+dict_result = cursor.fetchall()
+
 
 cursor.close() # <--close the cursor
 print("-------------------")
 print("Results as a list of dictionaries:")
 print(result) # <--print the results
+
 #Now we can iterate over the list of dictionaries:
 print("-------------------")
 for row in result:

@@ -20,6 +20,7 @@ user = DB_CONFIG['user']
 password = DB_CONFIG['password']
 database = DB_CONFIG['database']
 
+
 '''
 ALTERNATIVE: 
 assign credentials to environment variables and retrieve them from the OS:
